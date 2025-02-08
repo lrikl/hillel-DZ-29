@@ -40,7 +40,7 @@ timerButton.addEventListener('click', () => {
     const userTimerInput = input.value.trim();
 
     if (!timeVerification.test(userTimerInput)) {
-        showError(input, 'формат таймера невірний, напишіть кількість хвилин і секунд від 00 до 59, виду 00:00');
+        showError(input, 'формат таймера невірний, напишіть кількість хвилин або секунд від 00 до 59, виду 00:00');
     } else if (userTimerInput === '00:00') {
         showError(input, 'введіть значення більше 0');
     }
