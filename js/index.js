@@ -71,9 +71,9 @@ function removeError(input) {
 }
 
 function showBannerEndTimer(toggle) {
-    document.querySelector('.timer-end').style.display = toggle ? "block" : "none";
+    document.querySelector('.timer-end').style.display = toggle ? 'block' : 'none';
     
-    const audio = document.querySelector(".end-sound");
+    const audio = document.querySelector('.end-sound');
     if (toggle) {
         audio.play();
     } else {
